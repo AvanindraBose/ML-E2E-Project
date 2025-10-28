@@ -17,7 +17,7 @@ filehandler = RotatingFileHandler(
 )
 
 logging.basicConfig(
-    level=logging.info,
+    level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[filehandler]
 )

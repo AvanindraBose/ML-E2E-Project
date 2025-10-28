@@ -5,8 +5,8 @@ from app.core.security import create_token
 router = APIRouter()
 
 class AuthInput(BaseModel):
-    username = str
-    password = str
+    username :str
+    password :str
 
 @router.post('/login')
 def login_user(auth:AuthInput):
